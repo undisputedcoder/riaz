@@ -2,7 +2,7 @@ import Image from './Image'
 import Link from './Link'
 import { Badge } from '@/components/Badge'
 
-const Card = ({ title, description, imgSrc, href, tags = [] }) => (
+const Card = ({ title, description, imgSrc, href, tags }) => (
   <div className="md max-w-[544px] p-4 md:w-1/2">
     <div
       className={`${
