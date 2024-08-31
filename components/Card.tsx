@@ -1,7 +1,8 @@
 import Image from './Image'
 import Link from './Link'
+import { Badge } from '@/components/Badge'
 
-const Card = ({ title, description, imgSrc, href }) => (
+const Card = ({ title, description, imgSrc, href, tags = [] }) => (
   <div className="md max-w-[544px] p-4 md:w-1/2">
     <div
       className={`${
@@ -38,6 +39,13 @@ const Card = ({ title, description, imgSrc, href }) => (
             title
           )}
         </h2>
+        <div className="mb-3 flex flex-wrap">
+          {tags.map((tag, index) => (
+            <Badge key={tag} className="mb-2 mr-2" variant={index === 0 ? 'default' : 'outline'}>
+              {tag}
+            </Badge>
+          ))}
+        </div>
         <p className="prose mb-3 max-w-none text-gray-500 dark:text-gray-400">{description}</p>
         {href && (
           <Link
