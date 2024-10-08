@@ -9,7 +9,7 @@ interface Project {
 const projectsData: Project[] = [
   {
     title: 'Search Engine',
-    tags: ['test'],
+    tags: ['test', 'test1', 'test3', 'test4'],
     description: `What if you could look up any information in the world? Webpages, images, videos
     and more. Google has many features to help you find exactly what you're looking
     for.`,
@@ -18,7 +18,7 @@ const projectsData: Project[] = [
   },
   {
     title: 'The Time Machine',
-    tags: ['test2'],
+    tags: ['test', 'test1', 'test3', 'test4'],
     description: `Imagine being able to travel back in time or to the future. Simple turn the knob
     to the desired date and press "Go". No more worrying about lost keys or
     forgotten headphones with this simple yet affordable solution.`,
