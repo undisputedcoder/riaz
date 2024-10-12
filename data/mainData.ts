@@ -134,16 +134,15 @@ export const projectsData: Project[] = [
 
 export const experienceData: Company[] = [
   {
-    name: 'Valsoft - Aspire',
-    location: 'Remote - Canada',
-    description:
-      'Aspire Software is a division of Valsoft that focuses on acquiring, managing, and building vertical market software businesses.',
-    imgSrc: 'https://www.valsoftcorp.com/wp-content/uploads/2017/10/valsoft-logo.svg',
-    url: 'https://www.valsoftcorp.com/',
-    active: true,
+    name: 'Vix Technology',
+    location: 'Hybrid - Perth, Australia',
+    description: '',
+    imgSrc: '',
+    url: '',
+    active: false,
     items: [
       {
-        title: 'Software Developer - DockMaster',
+        title: 'Software Engineer',
         roleType: 'Fulltime',
         startDate: '2024/04/15',
         description:
@@ -162,13 +161,13 @@ export const experienceData: Company[] = [
           { name: 'NGINX', href: 'https://www.nginx.com/' },
           { name: 'Locust', href: 'https://locust.io/' },
         ],
-        active: true,
+        active: false,
       },
       {
-        title: 'AI Backend Developer - Hospitality Portfolio',
+        title: 'Associate Software Engineer',
         roleType: 'Fulltime',
-        startDate: '2023/10/15',
-        endDate: '2024/04/15',
+        startDate: '2022/08/15',
+        endDate: '2024/02/15',
         description:
           'Developed prototypes for AI features tailored to the hospitality department, enhancing support and operational efficiency. Created a RAG documentation chat for the support team, streamlining access to information and reducing response times. Implemented automated ticket first replies with suggested solutions, improving customer service efficiency and response accuracy. Designed AI-driven BI solutions to generate insights from databases and software APIs, facilitating data-driven decision-making. Developed tools for summarization and classification of backlog tickets, assisting the product team in prioritizing and addressing issues effectively.',
         techStack: [
@@ -185,57 +184,41 @@ export const experienceData: Company[] = [
           { name: 'Postgres', href: 'https://www.postgresql.org/' },
         ],
       },
-      {
-        title: 'API Implementation Engineer - InnQuest',
-        roleType: 'Fulltime',
-        startDate: '2022/10/24',
-        endDate: '2023/10/15',
-        description:
-          'Created, configured, tested, and deployed Agora API integration functionalities, ensuring seamless connectivity and optimal performance. Coordinated the implementation of third-party systems connections with active system monitoring, ensuring reliable and efficient integrations. Developed multiple automation tools to facilitate the search and investigation of issues, significantly improving the efficiency of the troubleshooting process.',
-        techStack: [
-          { name: 'Postman', href: 'https://www.postman.com/' },
-          { name: 'Testrail', href: 'https://www.gurock.com/testrail' },
-          { name: 'Selenium', href: 'https://www.selenium.dev/' },
-          { name: 'Python', href: 'https://www.python.org/' },
-          // { name: 'APIs', href: '#' },
-          { name: 'Pandas', href: 'https://pandas.pydata.org/' },
-        ],
-      },
     ],
   },
-  {
-    name: 'FlairsTech',
-    location: 'Maadi - Egypt',
-    description:
-      'FlairsTech is a software development company that specializes in building custom software solutions for businesses. We help businesses automate their processes and improve their efficiency.',
-    imgSrc:
-      'https://media.licdn.com/dms/image/C4D0BAQFEqFIZYFhFpA/company-logo_200_200/0/1630540236589/flairstech_logo?e=1726704000&v=beta&t=AuvxQoMg94CqpL1A2-SOgZIChOIE14uscukufiaUDv0',
-    url: 'https://flairstech.com/',
-    active: true,
-    items: [
-      {
-        title: 'AI Fullstack Developer (Consultant)',
-        roleType: 'Consultant',
-        startDate: '2023/02/14',
-        description:
-          'Developed AI solutions for the operations department, enhancing efficiency and performance across various tasks. Created an AI web application for the quality team, reducing call/ticket evaluation time by up to 80% and achieving a 90% utilization rate for overall call evaluations. Led the development and deployment of the web application, handling frontend, backend, AI microservices, server configurations, and deployment.',
-        techStack: [
-          { name: 'Mistral LLM', href: '#' },
-          { name: 'Whisper ASR', href: '#' },
-          { name: 'VLLM', href: '#' },
-          { name: 'Sveltekit', href: 'https://kit.svelte.dev/' },
-          { name: 'FastAPI', href: 'https://fastapi.tiangolo.com/' },
-          { name: 'Docker', href: 'https://www.docker.com/' },
-          { name: 'Postgres', href: 'https://www.postgresql.org/' },
-          { name: 'AWS', href: 'https://aws.amazon.com/' },
-          { name: 'github', href: 'https://github.com/' },
-          { name: 'nginx', href: 'https://www.nginx.com/' },
-          { name: 'langchain', href: 'https://www.langchain.com/' },
-        ],
-        active: true,
-      },
-    ],
-  },
+  // {
+  //   name: 'FlairsTech',
+  //   location: 'Maadi - Egypt',
+  //   description:
+  //     'FlairsTech is a software development company that specializes in building custom software solutions for businesses. We help businesses automate their processes and improve their efficiency.',
+  //   imgSrc:
+  //     'https://media.licdn.com/dms/image/C4D0BAQFEqFIZYFhFpA/company-logo_200_200/0/1630540236589/flairstech_logo?e=1726704000&v=beta&t=AuvxQoMg94CqpL1A2-SOgZIChOIE14uscukufiaUDv0',
+  //   url: 'https://flairstech.com/',
+  //   active: true,
+  //   items: [
+  //     {
+  //       title: 'AI Fullstack Developer (Consultant)',
+  //       roleType: 'Consultant',
+  //       startDate: '2023/02/14',
+  //       description:
+  //         'Developed AI solutions for the operations department, enhancing efficiency and performance across various tasks. Created an AI web application for the quality team, reducing call/ticket evaluation time by up to 80% and achieving a 90% utilization rate for overall call evaluations. Led the development and deployment of the web application, handling frontend, backend, AI microservices, server configurations, and deployment.',
+  //       techStack: [
+  //         { name: 'Mistral LLM', href: '#' },
+  //         { name: 'Whisper ASR', href: '#' },
+  //         { name: 'VLLM', href: '#' },
+  //         { name: 'Sveltekit', href: 'https://kit.svelte.dev/' },
+  //         { name: 'FastAPI', href: 'https://fastapi.tiangolo.com/' },
+  //         { name: 'Docker', href: 'https://www.docker.com/' },
+  //         { name: 'Postgres', href: 'https://www.postgresql.org/' },
+  //         { name: 'AWS', href: 'https://aws.amazon.com/' },
+  //         { name: 'github', href: 'https://github.com/' },
+  //         { name: 'nginx', href: 'https://www.nginx.com/' },
+  //         { name: 'langchain', href: 'https://www.langchain.com/' },
+  //       ],
+  //       active: true,
+  //     },
+  //   ],
+  // },
 ]
 
 export const skillsData: Skill[] = [

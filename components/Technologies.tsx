@@ -112,19 +112,18 @@ export function Technologies() {
                   <CardContent>
                     <div className="grid grid-cols-5 gap-4 md:grid-cols-8 lg:grid-cols-8 xl:grid-cols-10">
                       {filteredSkillsData[category].map((skill) => (
-                        <HybridTooltip key={skill.id}>
-                          <HybridTooltipTrigger asChild>
-                            <Button
-                              className={`h-14 p-2 sm:p-2 ${skill.level === 'learning' ? 'border border-green-300' : ''}`}
-                              variant="outline"
-                            >
-                              <IconsBundle kind={skill.id} size={10} iconType="icon" />
-                            </Button>
-                          </HybridTooltipTrigger>
-                          <HybridTooltipContent className="w-auto">
+                        // eslint-disable-next-line react/jsx-key
+                        <div className="flex flex-col items-center">
+                          <p className="z-50 overflow-hidden rounded-md px-3 py-1.5 text-xs">
                             {skill.name}
-                          </HybridTooltipContent>
-                        </HybridTooltip>
+                          </p>
+                          <Button
+                            className={`h-14 p-2 sm:p-2 ${skill.level === 'learning' ? 'border border-green-300' : ''}`}
+                            variant="outline"
+                          >
+                            <IconsBundle kind={skill.id} size={10} iconType="icon" />
+                          </Button>
+                        </div>
                       ))}
                     </div>
                   </CardContent>
