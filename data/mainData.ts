@@ -139,7 +139,7 @@ export const experienceData: Company[] = [
     description: '',
     imgSrc: '',
     url: '',
-    active: false,
+    active: true,
     items: [
       {
         title: 'Software Engineer',
@@ -161,7 +161,7 @@ export const experienceData: Company[] = [
           { name: 'NGINX', href: 'https://www.nginx.com/' },
           { name: 'Locust', href: 'https://locust.io/' },
         ],
-        active: false,
+        active: true,
       },
       {
         title: 'Associate Software Engineer',
@@ -183,42 +183,43 @@ export const experienceData: Company[] = [
           { name: 'Gradio', href: 'https://gradio.app/' },
           { name: 'Postgres', href: 'https://www.postgresql.org/' },
         ],
+        active: false,
       },
     ],
   },
-  // {
-  //   name: 'FlairsTech',
-  //   location: 'Maadi - Egypt',
-  //   description:
-  //     'FlairsTech is a software development company that specializes in building custom software solutions for businesses. We help businesses automate their processes and improve their efficiency.',
-  //   imgSrc:
-  //     'https://media.licdn.com/dms/image/C4D0BAQFEqFIZYFhFpA/company-logo_200_200/0/1630540236589/flairstech_logo?e=1726704000&v=beta&t=AuvxQoMg94CqpL1A2-SOgZIChOIE14uscukufiaUDv0',
-  //   url: 'https://flairstech.com/',
-  //   active: true,
-  //   items: [
-  //     {
-  //       title: 'AI Fullstack Developer (Consultant)',
-  //       roleType: 'Consultant',
-  //       startDate: '2023/02/14',
-  //       description:
-  //         'Developed AI solutions for the operations department, enhancing efficiency and performance across various tasks. Created an AI web application for the quality team, reducing call/ticket evaluation time by up to 80% and achieving a 90% utilization rate for overall call evaluations. Led the development and deployment of the web application, handling frontend, backend, AI microservices, server configurations, and deployment.',
-  //       techStack: [
-  //         { name: 'Mistral LLM', href: '#' },
-  //         { name: 'Whisper ASR', href: '#' },
-  //         { name: 'VLLM', href: '#' },
-  //         { name: 'Sveltekit', href: 'https://kit.svelte.dev/' },
-  //         { name: 'FastAPI', href: 'https://fastapi.tiangolo.com/' },
-  //         { name: 'Docker', href: 'https://www.docker.com/' },
-  //         { name: 'Postgres', href: 'https://www.postgresql.org/' },
-  //         { name: 'AWS', href: 'https://aws.amazon.com/' },
-  //         { name: 'github', href: 'https://github.com/' },
-  //         { name: 'nginx', href: 'https://www.nginx.com/' },
-  //         { name: 'langchain', href: 'https://www.langchain.com/' },
-  //       ],
-  //       active: true,
-  //     },
-  //   ],
-  // },
+  {
+    name: 'FlairsTech',
+    location: 'Maadi - Egypt',
+    description:
+      'FlairsTech is a software development company that specializes in building custom software solutions for businesses. We help businesses automate their processes and improve their efficiency.',
+    imgSrc:
+      'https://media.licdn.com/dms/image/C4D0BAQFEqFIZYFhFpA/company-logo_200_200/0/1630540236589/flairstech_logo?e=1726704000&v=beta&t=AuvxQoMg94CqpL1A2-SOgZIChOIE14uscukufiaUDv0',
+    url: 'https://flairstech.com/',
+    active: false,
+    items: [
+      {
+        title: 'AI Fullstack Developer (Consultant)',
+        roleType: 'Consultant',
+        startDate: '2023/02/14',
+        description:
+          'Developed AI solutions for the operations department, enhancing efficiency and performance across various tasks. Created an AI web application for the quality team, reducing call/ticket evaluation time by up to 80% and achieving a 90% utilization rate for overall call evaluations. Led the development and deployment of the web application, handling frontend, backend, AI microservices, server configurations, and deployment.',
+        techStack: [
+          { name: 'Mistral LLM', href: '#' },
+          { name: 'Whisper ASR', href: '#' },
+          { name: 'VLLM', href: '#' },
+          { name: 'Sveltekit', href: 'https://kit.svelte.dev/' },
+          { name: 'FastAPI', href: 'https://fastapi.tiangolo.com/' },
+          { name: 'Docker', href: 'https://www.docker.com/' },
+          { name: 'Postgres', href: 'https://www.postgresql.org/' },
+          { name: 'AWS', href: 'https://aws.amazon.com/' },
+          { name: 'github', href: 'https://github.com/' },
+          { name: 'nginx', href: 'https://www.nginx.com/' },
+          { name: 'langchain', href: 'https://www.langchain.com/' },
+        ],
+        active: true,
+      },
+    ],
+  },
 ]
 
 export const skillsData: Skill[] = [

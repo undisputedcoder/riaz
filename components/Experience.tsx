@@ -97,26 +97,7 @@ export function Experience() {
               >
                 <CardHeader>
                   <CardTitle>
-                    <HoverCard>
-                      <HoverCardTrigger asChild>
-                        <Button variant="link" className="px-0 text-2xl">
-                          {company.name}
-                        </Button>
-                      </HoverCardTrigger>
-                      <HoverCardContent className="w-80">
-                        <div className="flex justify-between space-x-4">
-                          <Avatar>
-                            <AvatarImage src={company.imgSrc} />
-                            <AvatarFallback>VC</AvatarFallback>
-                          </Avatar>
-                          <div className="space-y-1">
-                            <h4 className="text-sm font-semibold">@{company.name}</h4>
-                            <h4 className="text-sm font-semibold">{company.location}</h4>
-                            <p className="text-sm">{company.description}</p>
-                          </div>
-                        </div>
-                      </HoverCardContent>
-                    </HoverCard>
+                    <p className="px-0 text-2xl">{company.name}</p>
                   </CardTitle>
                   <CardDescription>{company.description}</CardDescription>
                 </CardHeader>
