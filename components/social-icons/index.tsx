@@ -90,6 +90,12 @@ import {
   Locust,
   Fiber,
   Stripe,
+  Terraform,
+  Ansible,
+  TeamCity,
+  CDK,
+  Oracle,
+  Java,
 } from './icons'
 
 import Image from 'next/image'
@@ -238,6 +244,12 @@ const components = {
   vllm: VLLM,
   fiber: Fiber,
   stripe: Stripe,
+  terraform: Terraform,
+  ansible: Ansible,
+  teamcity: TeamCity,
+  awscdk: CDK,
+  java: Java,
+  oracle: Oracle,
 }
 
 type IconsBundleProps = {

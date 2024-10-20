@@ -61,7 +61,7 @@ export function Experience() {
   return (
     <div className="my-10 w-full">
       <h3 className="text-2xl font-extrabold leading-9 tracking-tight sm:text-3xl sm:leading-10 md:text-4xl md:leading-14">
-        Experience
+        Places I've worked
       </h3>
       <div className="mt-5">
         <Tabs

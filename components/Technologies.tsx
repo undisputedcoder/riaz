@@ -31,7 +31,7 @@ import { useState } from 'react'
 
 function filterSkillsData(skillsData: Skill[]) {
   // returns an object with each category as a key and an array of skills as the value
-  const acc: Record<string, Skill[]> = { 'Most Used': [] }
+  const acc: Record<string, Skill[]> = {}
 
   skillsData.forEach((skill) => {
     if (!skill.hidden) {
@@ -41,9 +41,9 @@ function filterSkillsData(skillsData: Skill[]) {
       acc[skill.category].push(skill)
 
       // If the skill is most used, add it to the "Most Used" category
-      if (skill.mostUsed) {
-        acc['Most Used'].push(skill)
-      }
+      // if (skill.mostUsed) {
+      //   acc['Most Used'].push(skill)
+      // }
     }
   })
 
@@ -91,7 +91,7 @@ export function Technologies() {
                   key={`trigger-${category}`}
                   value={category}
                   className={
-                    category === 'Most Used'
+                    category === 'Languages'
                       ? ' col-span-2 from-blue-300 via-sky-300 to-cyan-300 data-[state=active]:bg-gradient-to-tr data-[state=active]:text-slate-900 md:col-span-1 '
                       : ''
                   }
@@ -105,9 +105,6 @@ export function Technologies() {
                 <Card key={category} className="w-full">
                   <CardHeader>
                     <CardTitle>{category}</CardTitle>
-                    {category === 'Most Used' && (
-                      <CardDescription>These are my most used technologies.</CardDescription>
-                    )}
                   </CardHeader>
                   <CardContent>
                     <div className="grid grid-cols-5 gap-4 md:grid-cols-8 lg:grid-cols-8 xl:grid-cols-10">

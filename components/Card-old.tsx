@@ -1,6 +1,7 @@
 import Image from './Image'
 import Link from './Link'
 import { Badge } from '@/components/Badge'
+import Slider from 'react-slick'
 
 const Card = ({ title, description, imgSrc, href, tags }) => (
   <div className="md max-w-[544px] p-4 md:w-1/2">
@@ -14,7 +15,7 @@ const Card = ({ title, description, imgSrc, href, tags }) => (
           <Link href={href} aria-label={`Link to ${title}`}>
             <Image
               alt={title}
-              src={imgSrc}
+              src={imgSrc[0]}
               className="object-cover object-center md:h-36 lg:h-48"
               width={544}
               height={286}
@@ -23,7 +24,7 @@ const Card = ({ title, description, imgSrc, href, tags }) => (
         ) : (
           <Image
             alt={title}
-            src={imgSrc}
+            src={imgSrc[0]}
             className="object-cover object-center md:h-36 lg:h-48"
             width={544}
             height={286}
@@ -41,7 +42,7 @@ const Card = ({ title, description, imgSrc, href, tags }) => (
         </h2>
         <div className="mb-3 flex flex-wrap">
           {tags.map((tag, index) => (
-            <Badge key={tag} className="mb-2 mr-2" variant={index === 0 ? 'default' : 'outline'}>
+            <Badge key={tag} className="mb-2 mr-2" variant={'outline'}>
               {tag}
             </Badge>
           ))}

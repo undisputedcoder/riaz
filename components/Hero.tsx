@@ -1,25 +1,46 @@
 import { RoughNotation } from 'react-rough-notation'
+import Link from 'next/link'
+import { IoLogoGithub, IoLogoLinkedin, IoMail, IoCall } from 'react-icons/io5'
+
+function SocialLink({ icon: Icon, ...props }) {
+  return (
+    <Link className="-m-1 p-1 " {...props}>
+      <Icon className="h-10 w-10 cursor-pointer fill-gray-500 transition hover:fill-gray-200" />
+    </Link>
+  )
+}
 
 export default function Hero() {
   return (
-    <div className="mb-5 max-w-2xl">
-      <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
-        Hi, I'm
+    <div className="mb-5 max-w-3xl">
+      <h1 className="text-3xl font-extrabold leading-9 tracking-tight dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
+        G'day, I'm{' '}
+        <RoughNotation type={'underline'} show color="#f5cb42">
+          Riaz
+        </RoughNotation>
       </h1>
       <p className="mb-4 mt-6 text-base text-gray-600 dark:text-gray-400">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        <RoughNotation type={'circle'} show color="#facc15">
-          {' '}
-          Pellentesque{' '}
+        I'm a software engineer with a big interest in{' '}
+        <RoughNotation type={'highlight'} show color="#f5cb42">
+          Machine Learning/Artificial Intelligence
         </RoughNotation>{' '}
-        tincidunt diam a egestas tempus. In ut eros lacinia, vulputate diam in, imperdiet est. In ac
-        leo metus. Integer vulputate enim vitae ipsum malesuada tempus. Morbi porttitor ipsum eget
-        turpis bibendum efficitur. Suspendisse cursus diam ac pellentesque ultricies. In ullamcorper
-        rhoncus nibh, vel posuere erat luctus eu. Nullam placerat ultricies ex, ut fermentum risus
-        volutpat vitae. In hac habitasse platea dictumst. Cras cursus euismod enim, id lobortis
-        ipsum tincidunt non. Phasellus sodales cursus porta. Orci varius natoque penatibus et magnis
-        dis parturient montes, nascetur ridiculus mus.
+        and data engineering - basically, anything that brings data to life! I'm on a journey to
+        build my career in these fields. Feel free to take a look around and reach out if you want
+        to chat!
       </p>
+      <div className="mt-6 flex gap-6">
+        <SocialLink
+          href="https://github.com/undisputedcoder"
+          aria-label="Check out my Github"
+          icon={IoLogoGithub}
+        />
+        <SocialLink
+          href="https://www.linkedin.com/in/riazamin/"
+          aria-label="Connect with me on LinkedIn"
+          icon={IoLogoLinkedin}
+        />
+        <SocialLink href="" aria-label="Send me an email" icon={IoMail} />
+      </div>
     </div>
   )
 }
