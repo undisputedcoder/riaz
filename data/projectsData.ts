@@ -4,26 +4,23 @@ interface Project {
   description: string
   href?: string
   imgSrc?: string[]
+  link?: string
 }
 
 const projectsData: Project[] = [
   {
-    title: 'Search Engine',
-    tags: ['test', 'test1', 'test3', 'test4'],
-    description: `What if you could look up any information in the world? Webpages, images, videos
-    and more. Google has many features to help you find exactly what you're looking
-    for.`,
-    imgSrc: ['/static/images/google.png', '/static/images/time-machine.jpg'],
-    href: 'https://www.google.com',
+    title: 'Hot Dog or Not Hot Dog',
+    tags: ['Python', 'Tensorflow', 'Streamlit'],
+    description: `Inspired from HBO's Silicon Valley tv show, this is a simple app that detects whether an image is a hot dog or not a hot dog using a model trained using Tensorflow.`,
+    imgSrc: ['/static/images/project1.png', '/static/images/project1.png'],
+    link: 'https://github.com/undisputedcoder/Hot-Dog-or-Not-Hot-Dog',
   },
   {
-    title: 'The Time Machine',
-    tags: ['test', 'test1', 'test3', 'test4'],
-    description: `Imagine being able to travel back in time or to the future. Simple turn the knob
-    to the desired date and press "Go". No more worrying about lost keys or
-    forgotten headphones with this simple yet affordable solution.`,
-    imgSrc: ['/static/images/time-machine.jpg', '/static/images/google.png'],
-    href: '/blog/the-time-machine',
+    title: 'Disney Sentiment Analyser',
+    tags: ['Python', 'Tensorflow', 'Streamlit'],
+    description: `An application that classifies whether the sentiment of disneyland review(s) is good or bad based on an NLP model trained using Tensorflow.`,
+    imgSrc: ['/static/images/project2.jpg', '/static/images/project2.jpg'],
+    link: 'https://github.com/undisputedcoder/Disney-Sentimentron',
   },
 ]
 

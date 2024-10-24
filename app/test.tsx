@@ -88,6 +88,7 @@ export default function Test() {
                   imgSrc={d.imgSrc}
                   href={d.href}
                   tags={d.tags}
+                  link={d.link}
                 />
               </div>
             ))}

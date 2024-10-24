@@ -154,7 +154,13 @@ export const TimelineItemDescription = ({
   children: ReactNode
   className?: string
 }) => {
-  return <p className={cn('text-muted-foreground text-sm', className)}>{children}</p>
+  const lines = children?.toString().split('\n')
+
+  return (
+    <div className={cn('text-muted-foreground text-sm', className)}>
+      {lines?.map((line, index) => <p key={index}>{line}</p>)}
+    </div>
+  )
 }
 
 export const TimelineItemSmallText = ({ children }: { children: ReactNode }) => {

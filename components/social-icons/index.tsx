@@ -96,6 +96,8 @@ import {
   CDK,
   Oracle,
   Java,
+  BitBucket,
+  Cplusplus,
 } from './icons'
 
 import Image from 'next/image'
@@ -250,6 +252,8 @@ const components = {
   awscdk: CDK,
   java: Java,
   oracle: Oracle,
+  bitbucket: BitBucket,
+  cplusplus: Cplusplus,
 }
 
 type IconsBundleProps = {
