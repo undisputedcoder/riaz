@@ -4,7 +4,8 @@ import { IoLogoGithub, IoLogoLinkedin, IoMail, IoCall } from 'react-icons/io5'
 
 function SocialLink({ icon: Icon, ...props }) {
   return (
-    <Link className="-m-1 p-1 " {...props}>
+    // eslint-disable-next-line jsx-a11y/anchor-is-valid
+    <Link href={''} className="-m-1 p-1 " {...props}>
       <Icon className="h-10 w-10 cursor-pointer fill-gray-500 transition hover:fill-gray-200" />
     </Link>
   )
