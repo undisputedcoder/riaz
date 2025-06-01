@@ -48,22 +48,16 @@ const Card = ({ title, description, imgSrc, href, tags, link }) => (
         imgSrc && 'h-full'
       }  overflow-hidden rounded-md border-2 border-gray-200 border-opacity-60 dark:border-gray-700`}
     >
-      <Slider {...settings}>
-        {imgSrc.map((src, index) => (
-          // eslint-disable-next-line react/jsx-key
-          <div>
-            <Image
-              key={index}
-              alt="title"
-              src={src}
-              className="mx-auto object-cover object-center md:h-36 lg:h-48"
-              style={{ width: 733, height: 'auto' }}
-              width={733}
-              height={351}
-            />
-          </div>
-        ))}
-      </Slider>
+      <div>
+        <Image
+          alt="title"
+          src={imgSrc}
+          className="mx-auto object-cover object-center md:h-36 lg:h-48"
+          style={{ width: 733, height: 'auto' }}
+          width={733}
+          height={351}
+        />
+      </div>
       <div className="p-6">
         <h2 className="mb-3 text-2xl font-bold leading-8 tracking-tight">
           {href ? (
